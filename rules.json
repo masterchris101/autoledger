@@ -1,0 +1,29 @@
+{
+  "duplicate_window_days": 2,
+  "tiny_charge_threshold": 2.00,
+  "large_charge_threshold": 300.00,
+  "weird_score_threshold": 3,
+  "weird_score_rules": {
+    "unknown_merchant_points": 3,
+    "tiny_charge_points": 2,
+    "rare_merchant_points": 2,
+    "large_charge_points": 2
+  },
+  "merchant_normalization": {
+    "HELP.UBER.COM": "UBER",
+    "UBER *TRIP": "UBER",
+    "DOORDASH*ORDER": "DOORDASH",
+    "NETFLIX.COM 800-585-7265": "NETFLIX",
+    "AMAZON MKTPLACE PMTS": "AMAZON",
+    "SPOTIFY USA": "SPOTIFY",
+    "APPLE.COM/BILL": "APPLE"
+  },
+  "category_rules": [
+    { "category": "Subscriptions", "keywords": ["NETFLIX", "SPOTIFY", "APPLE"] },
+    { "category": "Transport", "keywords": ["UBER", "LYFT", "MBTA"] },
+    { "category": "Coffee", "keywords": ["STARBUCKS", "DUNKIN"] },
+    { "category": "Food Delivery", "keywords": ["DOORDASH", "UBER EATS"] },
+    { "category": "Shopping", "keywords": ["AMAZON", "WALMART", "TARGET"] },
+    { "category": "Unknown", "keywords": ["UNKNOWN"] }
+  ]
+}
